@@ -1,5 +1,5 @@
 
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 
 const nextConfig: NextConfig = {
@@ -56,13 +56,23 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Webpack customizations
   webpack: (config, { isServer }) => {
-    // For production builds, still use webpack
-    if (process.env.NODE_ENV === 'production') {
-       config.plugins.push(new MonacoWebpackPlugin({
-         languages: ['javascript', 'typescript', 'css', 'html', 'json', 'python', 'java', 'sql'],
-       }));
-    }
+    // Add Monaco editor plugin once
+    config.plugins.push(
+      new MonacoWebpackPlugin({
+        languages: [
+          'javascript',
+          'typescript',
+          'css',
+          'html',
+          'json',
+          'python',
+          'java',
+          'sql',
+        ],
+      })
+    );
     return config;
   },
   turbo: {
@@ -72,9 +82,9 @@ const nextConfig: NextConfig = {
       },
     },
     webpack: {
-        plugins: [new MonacoWebpackPlugin({
-            languages: ['javascript', 'typescript', 'css', 'html', 'json', 'python', 'java', 'sql'],
-        })],
+      plugins: [new MonacoWebpackPlugin({
+        languages: ['javascript', 'typescript', 'css', 'html', 'json', 'python', 'java', 'sql'],
+      })],
     }
   },
 };
