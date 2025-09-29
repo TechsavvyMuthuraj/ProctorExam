@@ -1,0 +1,24 @@
+mutation CreateItem {
+  item_insert(data: {
+    name: "New Item",
+    description: "A newly created item"
+  }) @auth(level: USER)
+}
+
+query ListItem {
+  items @auth(level: PUBLIC) {
+    id
+    name
+    description
+  }
+}
+
+mutation UpdateItem($id: UUID!, $description: String) {
+  item_update(key: {id: $id}, data: {
+    description: $description
+  }) @auth(level: USER)
+}
+
+mutation DeleteItem($id: UUID!) {
+  item_delete(key: {id: $id}) @auth(level: USER)
+}

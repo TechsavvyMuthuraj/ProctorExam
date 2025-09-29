@@ -1,0 +1,16 @@
+mutation SeedData @auth(level: USER) {
+  product_upsertMany(data: [
+    {
+      id: "1",
+      name: "Sample Product 1",
+      description: "This is a sample product.",
+      price: 19.99
+    },
+    {
+      id: "2",
+      name: "Sample Product 2",
+      description: "Another sample product for testing.",
+      price: 29.99
+    }
+  ])
+}

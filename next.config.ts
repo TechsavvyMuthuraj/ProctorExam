@@ -1,9 +1,8 @@
-
 import type { NextConfig } from 'next';
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /* config options */
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -19,7 +18,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https' as const,
+        protocol: 'https',
         hostname: 'storage.googleapis.com',
         port: '',
         pathname: '/**',
@@ -56,23 +55,24 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Webpack customizations
   webpack: (config, { isServer }) => {
-    // Add Monaco editor plugin once
-    config.plugins.push(
-      new MonacoWebpackPlugin({
-        languages: [
-          'javascript',
-          'typescript',
-          'css',
-          'html',
-          'json',
-          'python',
-          'java',
-          'sql',
-        ],
-      })
-    );
+    // ✅ Only add Monaco to client-side production build
+    if (!isServer && process.env.NODE_ENV === 'production') {
+      config.plugins.push(
+        new MonacoWebpackPlugin({
+          languages: [
+            'javascript',
+            'typescript',
+            'css',
+            'html',
+            'json',
+            'python',
+            'java',
+            'sql',
+          ],
+        })
+      );
+    }
     return config;
   },
   turbo: {
@@ -81,11 +81,6 @@ const nextConfig: NextConfig = {
         loaders: ['@svgr/webpack'],
       },
     },
-    webpack: {
-      plugins: [new MonacoWebpackPlugin({
-        languages: ['javascript', 'typescript', 'css', 'html', 'json', 'python', 'java', 'sql'],
-      })],
-    }
   },
 };
 

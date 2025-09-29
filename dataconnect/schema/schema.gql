@@ -1,0 +1,55 @@
+type User @table {
+  username: String!
+  email: String!
+  createdAt: Timestamp!
+  bio: String
+  profilePictureUrl: String
+  displayName: String
+}
+
+type Song @table {
+  title: String!
+  artist: String!
+  album: String!
+  durationSeconds: Int!
+  releaseYear: Int!
+  genre: String
+  coverArtUrl: String
+}
+
+type Playlist @table {
+  user: User!
+  name: String!
+  createdAt: Timestamp!
+  updatedAt: Timestamp!
+  isPublic: Boolean!
+  description: String
+  coverImageUrl: String
+}
+
+type PlaylistSong @table(key: ["playlist", "song"]) {
+  playlist: Playlist!
+  song: Song!
+  positionInPlaylist: Int!
+  note: String
+}
+
+type Follow @table(key: ["follower", "followed"]) {
+  follower: User!
+  followed: User!
+  createdAt: Timestamp!
+}
+
+type Like @table(key: ["user", "song"]) {
+  user: User!
+  song: Song!
+  createdAt: Timestamp!
+}
+
+type Comment @table {
+  user: User!
+  playlist: Playlist!
+  content: String!
+  createdAt: Timestamp!
+  parentCommentId: UUID
+}
