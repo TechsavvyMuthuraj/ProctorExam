@@ -1,0 +1,16 @@
+{
+  "node": {
+    "401d28a9e45bd60e1383093ec21d0e6ca1a1ab15bd": {
+      "workers": {
+        "app/(evaluator)/evaluator/submission/[submissionId]/page": {
+          "moduleId": "[project]/.next-internal/server/app/(evaluator)/evaluator/submission/[submissionId]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(evaluator)/evaluator/submission/[submissionId]/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

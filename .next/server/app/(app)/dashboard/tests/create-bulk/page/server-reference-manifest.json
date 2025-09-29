@@ -1,0 +1,16 @@
+{
+  "node": {
+    "4083344da72ed93fef03910df7a1a40978b8cf29e0": {
+      "workers": {
+        "app/(app)/dashboard/tests/create-bulk/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/dashboard/tests/create-bulk/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(app)/dashboard/tests/create-bulk/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,64 @@
+{
+  "placeholderImages": [
+    {
+      "id": "avatar1",
+      "description": "User avatar 1",
+      "imageUrl": "https://images.unsplash.com/photo-1710974481447-fb001ad9ad5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBmYWNlfGVufDB8fHx8MTc1ODkyODgyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person face"
+    },
+    {
+      "id": "avatar2",
+      "description": "User avatar 2",
+      "imageUrl": "https://images.unsplash.com/photo-1725028748781-7adb1df9a943?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBmYWNlfGVufDB8fHx8MTc1ODkyODgyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person face"
+    },
+    {
+      "id": "avatar3",
+      "description": "User avatar 3",
+      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBmYWNlfGVufDB8fHx8MTc1ODkyODgyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person face"
+    },
+    {
+      "id": "avatar4",
+      "description": "User avatar 4",
+      "imageUrl": "https://images.unsplash.com/photo-1599566147214-ce487862ea4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwZXJzb24lMjBmYWNlfGVufDB8fHx8MTc1ODkyODgyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person face"
+    },
+    {
+      "id": "avatar5",
+      "description": "User avatar 5",
+      "imageUrl": "https://images.unsplash.com/photo-1693039537350-3bba6975add7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBmYWNlfGVufDB8fHx8MTc1ODkyODgyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person face"
+    },
+    {
+      "id": "tech1",
+      "description": "Abstract technology background",
+      "imageUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NTg5MzEyMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tech background"
+    },
+    {
+      "id": "tech2",
+      "description": "Team collaborating on a tech project",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWNoJTIwdGVhbXxlbnwwfHx8fDE3NTg5MzEyMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tech team"
+    },
+    {
+      "id": "about-us-hero",
+      "description": "Modern office interior with a collaborative atmosphere, showcasing innovation and teamwork.",
+      "imageUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpdCUyMGNvbXBhbnl8ZW58MHx8fHwxNzE3NTk5ODU5fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "modern office"
+    },
+    {
+      "id": "company-profile",
+      "description": "CodeSavvy company profile image",
+      "imageUrl": "https://images.unsplash.com/photo-1557754897-ca12c5049d83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21wYW55JTIwcHJvZmlsZXxlbnwwfHx8fDE3NTg5OTU5NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company profile"
+    },
+    {
+      "id": "developer-profile",
+      "description": "Project developer profile",
+      "imageUrl": "/images/developer-profile.png",
+      "imageHint": "male portrait"
+    }
+  ]
+}
